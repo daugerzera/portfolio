@@ -28,7 +28,6 @@ const ProjectCard: React.FC<PortifolioData> = ({ title, description, imageSrc, g
                 </div>
             </div>
 
-            {/* Content Section */}
             <div className="p-6 w-full lg:w-1/2 flex flex-col justify-between">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-2xl font-bold text-white">{title}</h2>
@@ -65,17 +64,15 @@ const ProjectCard: React.FC<PortifolioData> = ({ title, description, imageSrc, g
                 </div>
             </div>
 
-            {/* Modal/Carousel for Gallery */}
-            <Dialog open={isModalOpen} onClose={closeModal} className="fixed inset-0 z-50 flex items-center justify-center">
-                {/* Manual Overlay */}
+            <Dialog open={isModalOpen} onClose={closeModal} className="fixed inset-0 z-100 flex items-center justify-center">
+               
                 <div className="fixed inset-0 bg-black bg-opacity-80" onClick={closeModal}></div>
 
-                {/* Modal Content */}
                 <div className="relative max-w-2xl bg-white rounded-lg p-4 z-10">
                     <button onClick={closeModal} className="absolute top-2 right-2 text-black font-bold">&times;</button>
                     <div className="flex space-x-4 overflow-x-scroll">
                         {gallery.map((img, index) => (
-                            <div key={index} className="min-w-full">
+                            <div key={img} className="min-w-full">
                                 <Image src={img} alt={`Gallery image ${index + 1}`} width={500} height={300} className="rounded-md" />
                             </div>
                         ))}

@@ -1,17 +1,20 @@
 import { skillsData } from "./app/interfaces/icons";
 import { PortifolioData, SkillIconProps } from "./app/interfaces/types";
-import thumb_logistiko from "@/app/assets/logistiko/thumb_logistiko.jpg";
+import logistiko_thumb from "@/app/assets/logistiko/logistiko_thumb.jpg";
+import logistiko_1 from "@/app/assets/logistiko/logistiko_1.jpg";
+import logistiko_2 from "@/app/assets/logistiko/logistiko_2.jpg";
+import logistiko_3 from "@/app/assets/logistiko/logistiko_3.jpg";
 
 export const portifolio_data: PortifolioData[] = [
     {
         key: "Logistiko",
         title: "Logistiko",
         description: "SaaS B2B que integra e faz a gestão do estoque de anúncios de diferentes contas de marketplaces. Desenvolvimento Full Stack desde o system design até deploy (em produção).",
-        imageSrc: thumb_logistiko.src,
+        imageSrc: logistiko_thumb.src,
         gallery: [
-            "/path/to/image1.jpg",
-            "/path/to/image2.jpg",
-            "/path/to/image3.jpg",
+            logistiko_1.src,
+            logistiko_2.src,
+            logistiko_3.src,
         ],
         techIcons: skillsData.filter((icon: SkillIconProps) =>
             ["react", "sequelize", "css", "gcp", "node", "git", "postgresql"].includes(icon.key)
