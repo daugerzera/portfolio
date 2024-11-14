@@ -9,12 +9,12 @@ export default function About() {
           <div className="border-l-2 border-white mr-4"></div>
           <div className="flex flex-col gap-4">
             <h2 className="text-[1.20rem] md:text-2xl font-semibold">Sobre Mim</h2>
-            <p className="text-justify leading-relaxed">{`Olá, sou o Gabriel, um jovem de 23 anos apaixonado pela música, animais e pela leitura. 
-           Com foco em Frontend e uma jornada de 2 anos cursando Engenharia de Software e aprimorando minhas habilidades em HTML, CSS e JavaScript,
-           além de frameworks modernos como React, busco integrar uma equipe de desenvolvimento onde possa aplicar minhas competências técnicas.
-           Meu objetivo é criar interfaces intuitivas e experiências de usuário envolventes, alavancando boas práticas de design para desenvolver soluções eficientes e acessíveis.
-           Estou sempre buscando aprender, evoluir e contribuir para projetos que desafiem minha capacidade. 
-           Apesar de no momento estar focado no Frontend eu pretendo me tornar um desenvolvedor Full Stack.`}
+            <p className="text-justify leading-relaxed">{`Que bom ver você por aqui! Me chamo Alexander Peccin, apaixonado por música, natureza e tecnologia! 
+           Com foco em Full Stack (tenho a necessidade de saber como tudo funciona), carrego a experiência de mais de 10 anos em TI, sendo 5 anos dedicados na programação. Recentemente tenho aprimorado minhas habilidades em Frontend, 
+           estudando frameworks modernos como React e NextJS. Apesar de no momento estar focado no Frontend tenho muito conhecimento em Backend e uma ótima comunicação, o que me permite cooperar em diversas áreas com projetos e clientes. 
+           Meu atual objetivo é integrar uma equipe de desenvolvimento onde possa aplicar minhas competências técnicas e, mais do que tudo, aprender trocando experiências com a equipe.
+           Estou sempre buscando aprender, evoluindo e contribuindo com projetos que desafiem minha capacidade.`
+           }
             </p>
           </div>
         </div>
