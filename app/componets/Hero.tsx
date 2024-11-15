@@ -5,23 +5,29 @@ import linkedin_icon from "@/public/icons/linkedin_white.svg";
 
 export default function Hero() {
   return (
-    <section id="home" className="bg-neutral-700 shadow-md p-6 container max-w-5xl sm:rounded-lg m-3 flex justify-between">
+    <section id="home" className="container mx-auto max-w-5xl flex justify-between mt-[1rem] md:mt-[3rem] md:gap-5 px-[1rem] sm:px-[3rem]">
       <div>
-        <h2 className="text-[1.20rem] md:text-2xl font-semibold">Olá, eu sou o Alexander Peccin</h2>
-        <h3 className="text-4xl md:text-5xl font-bold text-purple-500 mt-2 whitespace-pre-line">Desenvolvedor {'\n'} Full Stack</h3>
-        <button className="mt-6 bg-purple-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-purple-600">
-          <a href="#contact">Contate-me</a>
-        </button>
-        <div className="flex space-x-4 mt-4">
-          <a href="https://github.com/daugerzera" target="_blank" rel="noopener noreferrer">
-            <Image src={github_icon.src} width={10} height={10} alt="GitHub" className="w-8 h-8" />
-          </a>
-          <a href="https://www.linkedin.com/in/alexander-peccin-616192106/" target="_blank" rel="noopener noreferrer">
-            <Image src={linkedin_icon.src} width={40} height={40} alt="LinkedIn" className="w-8 h-8" />
-          </a>
+        <h3 className="text-[1.2rem] md:text-[1.5rem] font-oleo-script">
+          Olá, eu sou o <span className="text-[#A855F7]">Alexander Peccin</span>
+        </h3>
+        <h2 className="text-[2.75rem] md:text-[3.2rem] lg:text-[4rem] font-bold text-white mt-[0.5rem] whitespace-pre-line leading-none">
+          Desenvolvedor {'\n'} Full Stack
+        </h2>
+        <div className="flex mt-6 gap-[1rem] items-center">
+          <button className="bg-purple-500 text-white px-6 py-2 font-semibold hover:bg-purple-600">
+            <a href="#contact">Entrar em contato</a>
+          </button>
+          <div className="flex space-x-[1rem]">
+            <a href="https://github.com/daugerzera" target="_blank" rel="noopener noreferrer">
+              <Image src={github_icon.src} width={10} height={10} alt="GitHub" className="w-[1.5rem] h-[1.5rem]" />
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-peccin-616192106/" target="_blank" rel="noopener noreferrer">
+              <Image src={linkedin_icon.src} width={40} height={40} alt="LinkedIn" className="w-[1.5rem] h-[1.5rem]" />
+            </a>
+          </div>
         </div>
       </div>
-      <div className="hidden md:block mr-10" >
+      <div className="hidden md:block md:w-17" >
         <Image
           src={alex_photo}
           alt={"Alex photo"}

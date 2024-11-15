@@ -33,8 +33,8 @@ const ProjectCard: React.FC<PortifolioData> = ({
     };
 
     return (
-        <div className="bg-neutral-700 rounded-lg shadow-md flex flex-col lg:flex-row max-w-5xl mx-auto overflow-hidden">
-          
+        <div className="bg-[#121212]  flex flex-col lg:flex-row max-w-5xl mx-auto overflow-hidden">
+
             <div
                 className="relative w-full lg:w-1/2 cursor-pointer overflow-hidden"
                 onClick={openModal}
@@ -69,30 +69,26 @@ const ProjectCard: React.FC<PortifolioData> = ({
                     </div>
                 </div>
 
-                <p className="text-gray-300 text-justify mb-6">{description}</p>
+                <p className="text-[0.95rem] mb-6">{description}</p>
 
                 <div className="flex space-x-4">
-                    <a
-                        href={projectLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-white text-black px-4 py-2 rounded-full font-semibold hover:bg-gray-200"
+                    <button
+                        onClick={() => window.open(projectLink, "_blank", "noopener,noreferrer")}
+                        className="bg-purple-500 px-4 py-1.5 text-[0.875rem] hover:bg-purple-600"
                     >
                         Ver Projeto
-                    </a>
+                    </button>
                     {repoLink ? (
-                        <a
-                            href={repoLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="bg-black text-white px-4 py-2 rounded-full font-semibold hover:bg-gray-800"
+                        <button
+                            onClick={() => window.open(repoLink, "_blank", "noopener,noreferrer")}
+                            className="bg-none px-4 py-1.5 text-[0.875rem] border-2 border-purple-600 px-6 py-2 border-w-2 hover:bg-purple-600"
                         >
                             &lt; Repositório /&gt;
-                        </a>
+                        </button>
                     ) : (
                         <button
                             disabled
-                            className="bg-black text-white px-4 py-2 rounded-full font-semibold opacity-50 cursor-not-allowed"
+                            className="bg-none px-4 py-1.5 text-[0.875rem] text-purple-500 border-2 border-purple-600 border-w-2 cursor-not-allowed"
                         >
                             &lt; Repositório /&gt;
                         </button>
@@ -100,7 +96,8 @@ const ProjectCard: React.FC<PortifolioData> = ({
                 </div>
             </div>
 
-           
+
+
             <Dialog
                 open={isModalOpen}
                 onClose={closeModal}
@@ -111,16 +108,15 @@ const ProjectCard: React.FC<PortifolioData> = ({
                     onClick={closeModal}
                 ></div>
 
-               
-                <div className="relative w-[90%] h-[90%] max-w-4xl max-h-[80vh] bg-[#5c5c5c] rounded-lg p-4 z-10 overflow-hidden flex items-center justify-center">
+
+                <div className="relative w-[90%] h-[90%] max-w-4xl max-h-[80vh] bg-[#121212] rounded-lg p-4 z-10 overflow-hidden flex items-center justify-center">
                     <button
                         onClick={closeModal}
-                        className="absolute top-2 right-2 text-black font-bold z-20"
+                        className="absolute top-2 right-2 text-white font-bold z-20 w-8 text-2xl"
                     >
                         &times;
                     </button>
 
-                    {/* Navegação Anterior */}
                     <button
                         onClick={prevImage}
                         className="absolute left-4 text-white text-3xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center z-20"
@@ -128,7 +124,6 @@ const ProjectCard: React.FC<PortifolioData> = ({
                         &#10094;
                     </button>
 
-                    {/* Exibição da Imagem */}
                     <div className="w-full h-full flex justify-center items-center">
                         <Image
                             src={gallery[currentImageIndex]}
@@ -139,7 +134,6 @@ const ProjectCard: React.FC<PortifolioData> = ({
                         />
                     </div>
 
-                    {/* Navegação Próxima */}
                     <button
                         onClick={nextImage}
                         className="absolute right-4 text-white text-3xl font-bold bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center z-20"

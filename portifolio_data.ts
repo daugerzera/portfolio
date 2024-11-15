@@ -4,6 +4,7 @@ import logistiko_thumb from "@/app/assets/logistiko/logistiko_thumb.jpg";
 import logistiko_1 from "@/app/assets/logistiko/logistiko_1.jpg";
 import logistiko_2 from "@/app/assets/logistiko/logistiko_2.jpg";
 import logistiko_3 from "@/app/assets/logistiko/logistiko_3.jpg";
+import logistiko_4 from "@/app/assets/logistiko/logistiko_3.jpg";
 
 export const portifolio_data: PortifolioData[] = [
     {
@@ -15,9 +16,10 @@ export const portifolio_data: PortifolioData[] = [
             logistiko_1.src,
             logistiko_2.src,
             logistiko_3.src,
+            logistiko_4.src,
         ],
         techIcons: skillsData.filter((icon: SkillIconProps) =>
-            ["react", "sequelize", "css", "gcp", "node", "git", "postgresql"].includes(icon.key)
+            ["react", "sequelize", "css", "gcp", "node"].includes(icon.key)
         ),
         projectLink: "https://logistiko.com.br/",
         repoLink: null
