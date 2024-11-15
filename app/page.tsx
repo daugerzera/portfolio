@@ -7,9 +7,9 @@ import Skills from "./componets/Skills";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-1 items-center">
+    <div className="flex flex-col gap-1 w-full">
       <Header />
-      <main className="flex flex-col gap-6 items-center">
+      <main className="flex flex-col gap-6 w-full">
         <Hero />
         <About />
         <Skills />

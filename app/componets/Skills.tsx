@@ -5,17 +5,21 @@ import SkillIcon from "./SkillIcon";
 
 const Skills: React.FC = () => {
   return (
-    <section id="skills" className="bg-neutral-700 shadow-md py-4 container max-w-5xl px-4 sm:rounded-lg m-3 flex flex-col gap-2">
-      <h2 className="text-3xl font-bold text-center text-white mb-8">Skills</h2>
-      <div className="grid grid-cols-4 md:grid-cols-8 gap-6 text-center">
-        {skillsData.map((icon: SkillIconProps) =>
-          <SkillIcon
-            key={icon.title}
-            src={icon.src}
-            title={icon.title}
-            alt={icon.alt}
-          />
-        )}
+    <section id="skills" className="w-full bg-[#121212] pt-8 pb-12">
+      <div className="container max-w-5xl mx-auto flex flex-col gap-2  px-4 sm:px-0">
+        <h2 className="text-[1.2rem] md:text-[1.5rem] font-oleo-script text-center mb-5">
+          Skills
+        </h2>
+        <div className="grid grid-cols-4 md:grid-cols-8 gap-6 text-center">
+          {skillsData.map((icon: SkillIconProps) => (
+            <SkillIcon
+              key={icon.title}
+              src={icon.src}
+              title={icon.title}
+              alt={icon.alt}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
