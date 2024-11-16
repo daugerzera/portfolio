@@ -40,7 +40,7 @@ export default function Footer() {
           Informações de contato
         </h2>
         <div className="flex justify-between lg:items-center">
-          <div className="flex flex-col lg:flex-row gap-10">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-10">
             <ContactLine icon={phone_icon.src} text={"+55 (41) 99171-2115"} alt={"Phone Number"} link={"https://wa.me/5541991712115"} />
             <ContactLine icon={mail_icon.src} text={"alexanderpeccin@gmail.com"} alt={"E-mail"} />
             <ContactLine icon={maps_icon.src} text={"Florianópolis - SC - Brasil"} alt={"Address"} />

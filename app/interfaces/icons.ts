@@ -21,7 +21,7 @@ export const skillsData: SkillIconProps[] = [
   { key: "javascript", src: javascript.src, title: 'JS', alt: 'JS Icon' },
   { key: "typescript", src: typescript.src, title: 'TS', alt: 'TS Icon' },
   { key: "react", src: react.src, title: 'REACT', alt: 'REACT Icon' },
-  { key: "next", src: next.src, title: 'NEXT', alt: 'NEXT Icon' },
+  { key: "next", src: next.src, title: 'NEXT.JS', alt: 'NEXT Icon' },
   { key: "reactnative", src: react.src, title: 'REACT NATIVE', alt: 'REACT NATIVE Icon' },
   { key: "node", src: node.src, title: 'NODE', alt: 'NODE Icon' },
   { key: "tailwindcss", src: tailwindcss.src, title: 'TAILWIND', alt: 'TAILWIND Icon' },
