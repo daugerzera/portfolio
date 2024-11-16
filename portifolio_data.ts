@@ -42,7 +42,7 @@ export const portifolio_data: PortifolioData[] = [
     {
         key: "Logistiko",
         title: "Logistiko",
-        description: "SaaS B2B que integra e faz a gestão do estoque de anúncios de diferentes contas de marketplaces. Desenvolvimento Full Stack desde o system design até deploy (em produção).",
+        description: "SaaS B2B que faz a gestão e controle do estoque de anúncios de diferentes contas de marketplaces, lidando com integrações e filas de processamento. Desenvolvimento Full Stack desde o system design até deploy (em produção).",
         imageSrc: logistiko_thumb.src,
         gallery: [
             logistiko_1.src,

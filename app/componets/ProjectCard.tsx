@@ -78,17 +78,10 @@ const ProjectCard: React.FC<PortifolioData> = ({
                     >
                         Ver Projeto
                     </button>
-                    {repoLink ? (
+                    {repoLink && (
                         <button
                             onClick={() => window.open(repoLink, "_blank", "noopener,noreferrer")}
                             className="bg-none px-4 py-1.5 text-[0.875rem] text-purple-500 border-2 border-purple-500 px-6 py-2 border-w-2 hover:border-purple-600 hover:text-purple-600"
-                        >
-                            &lt; Repositório /&gt;
-                        </button>
-                    ) : (
-                        <button
-                            disabled
-                            className="bg-none px-4 py-1.5 text-[0.875rem] text-purple-500 border-2 border-purple-500 px-6 py-2 border-w-2 cursor-not-allowed"
                         >
                             &lt; Repositório /&gt;
                         </button>
