@@ -36,6 +36,7 @@ const ProjectCard: React.FC<PortifolioData> = ({
         );
     };
 
+    
     return (
         <div className="bg-[#121212]  flex flex-col lg:flex-row max-w-5xl mx-auto overflow-hidden">
 
