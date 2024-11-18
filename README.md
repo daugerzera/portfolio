@@ -12,7 +12,7 @@ Esse projeto tem como objetivo, além de ser meu portfólio, treinar tecnologias
 ## :hammer: Stack / Tecnologias utilizadas
 
 - **HTML**
-- **Javascript**
+- **Typescript**
 - **Next**
 - **Tailwind**
 - **Intl**
