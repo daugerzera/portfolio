@@ -2,7 +2,7 @@ import { Work_Sans } from "next/font/google";
 
 const workSans = Work_Sans({
     subsets: ["latin"],
-    weight: ["400", "700"], // Especifique os pesos que você quer usar
+    weight: ["400", "700"],
 });
 
 export default function NotFound() {

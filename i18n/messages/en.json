@@ -1,5 +1,7 @@
 {
     "Header": {
-        "about": "about"
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact"
     }
 }
