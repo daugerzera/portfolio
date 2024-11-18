@@ -19,7 +19,6 @@ export default function Header() {
       <div className="container mx-auto flex items-center justify-between">
         <Image src={ap_icon.src} width={24} height={24} alt={"Alexander Peccin"} className="w-5.5 h-5.5 sm:w-8 h-8 " />
         <nav className="flex space-x-2.5 sm:space-x-5">
-          <a href="#home" className="text-gray-300 hover:text-purple-500 text-sm">Home</a>
           <a href="#about" className="text-gray-300 hover:text-purple-500 text-sm">{t('about')}</a>
           <a href="#skills" className="text-gray-300 hover:text-purple-500 text-sm">Skills</a>
           <a href="#portfolio" className="text-gray-300 hover:text-purple-500 text-sm">{t('projects')}</a>

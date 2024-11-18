@@ -3,18 +3,22 @@ import Image from 'next/image';
 import { Dialog } from '@headlessui/react';
 import { useState } from 'react';
 import { PortifolioData } from '../interfaces/types';
+import { useLocale, useTranslations } from 'next-intl';
 
 const ProjectCard: React.FC<PortifolioData> = ({
     title,
-    description,
+    descriptions,
     imageSrc,
     gallery,
     techIcons,
     projectLink,
     repoLink,
 }) => {
+    const locale = useLocale() as "en" | "pt";
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const t = useTranslations('ProjectCard');
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => {
@@ -49,7 +53,7 @@ const ProjectCard: React.FC<PortifolioData> = ({
                     className="rounded-t-lg lg:rounded-l-lg lg:rounded-t-none transition-transform duration-300 ease-in-out transform scale-105 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-semibold opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    Ver fotos
+                {t('seePics')}
                 </div>
             </div>
 
@@ -69,21 +73,21 @@ const ProjectCard: React.FC<PortifolioData> = ({
                     </div>
                 </div>
 
-                <p className="text-[0.9rem] mb-6 -mt-2">{description}</p>
+                <p className="text-[0.9rem] mb-6 -mt-2">{`${descriptions[locale]}`}</p>
 
                 <div className="flex space-x-4">
                     <button
                         onClick={() => window.open(projectLink, "_blank", "noopener,noreferrer")}
                         className="bg-purple-500 px-4 py-1.5 text-[0.875rem] hover:bg-purple-600"
                     >
-                        Ver Projeto
+                        {t('seeProject')}
                     </button>
                     {repoLink && (
                         <button
                             onClick={() => window.open(repoLink, "_blank", "noopener,noreferrer")}
                             className="bg-none px-4 py-1.5 text-[0.875rem] text-purple-500 border-2 border-purple-500 px-6 py-2 border-w-2 hover:border-purple-600 hover:text-purple-600"
                         >
-                            &lt; Repositório /&gt;
+                            &lt; {t('repository')} /&gt;
                         </button>
                     )}
                 </div>

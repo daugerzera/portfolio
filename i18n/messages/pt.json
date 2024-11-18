@@ -3,5 +3,31 @@
         "about": "Sobre",
         "projects": "Projetos",
         "contact": "Contato"
+    },
+    "Hero": {
+        "hello": "Olá, eu sou o",
+        "name": "Alexander Peccin",
+        "role1": "Desenvolvedor",
+        "role2": "Full Stack",
+        "contact": "Entrar em contado"
+    },
+    "About": {
+        "goodToHaveYou": "Que bom ter você por aqui",
+        "p1": "Sou Alexander Peccin, apaixonado por música, natureza e tecnologia. Com mais de 10 anos de experiência em TI, sendo 5 dedicados à programação. Trabalho como Full Stack porque gosto de saber como as coisas funcionam.",
+        "p2": "Atualmente, foco no Frontend, onde me especializo em frameworks como React e NextJS, mas também trago uma bagagem sólida em Backend e habilidades de comunicação para colaborar em diferentes áreas dos projetos.",
+        "p3": "Meu objetivo é fazer parte de uma equipe onde eu possa aprender com o time e contribuir para desafios que me motivem a evoluir. Quero me tornar Engenheiro Full Stack.",
+        "p4": "Acredito que o aprendizado constante e o trabalho em equipe são essenciais para o desenvolvimento de soluções impactantes, e estou sempre em busca de novos conhecimentos e oportunidades de crescimento."
+    },
+    "Projects": {
+        "someProjects": "Alguns dos meus projetos",
+        "compliance": "Por razões de compliance, alguns repositórios não podem ser compartilhados"
+    },
+    "ProjectCard": {
+        "seePics": "Ver fotos",
+        "seeProject": "Ver Projeto",
+        "repository": "Repositório"
+    },
+    "Footer": {
+        "info": "Informações de contato"
     }
 }
