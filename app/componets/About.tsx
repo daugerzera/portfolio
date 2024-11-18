@@ -13,8 +13,8 @@ export default function About() {
         </h2>
         <Image src={aspas_icon} width={50} height={50} alt={""} className="w-6 md:w-8 lg:w-10" />
       </div>
-      <div className="flex flex-col md:flex-row pr-[1.5rem] md:pr-[2.5rem] lg:pr-[4.5rem] gap-[1rem] md:gap-[4rem]">
-        <div className="flex flex-col gap-[1rem]">
+      <div className="flex flex-col md:flex-row pr-[1.5rem] md:pr-[2.5rem] lg:pr-[4.5rem] gap-[1rem] md:gap-[3.5rem]">
+        <div className="flex-1 flex flex-col gap-[1rem]">
           <p className="text-[0.875rem]">
             {t('p1')}
           </p>
@@ -22,7 +22,7 @@ export default function About() {
             {t('p2')}
           </p>
         </div>
-        <div className="flex flex-col gap-[1rem]">
+        <div className="flex-1 flex flex-col gap-[1rem]">
           <p className="text-[0.875rem]">
             {t('p3')}
           </p>
