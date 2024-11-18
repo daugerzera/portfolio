@@ -1,9 +1,9 @@
-import About from "../../componets/About";
-import Footer from "../../componets/Footer";
-import Header from "../../componets/Header";
-import Hero from "../../componets/Hero";
-import Portfolio from "../../componets/Portifolio";
-import Skills from "../../componets/Skills";
+import About from "@/app/componets/About";
+import Footer from "@/app/componets/Footer";
+import Header from "@/app/componets/Header";
+import Hero from "@/app/componets/Hero";
+import Portfolio from "@/app/componets/Portifolio";
+import Skills from "@/app/componets/Skills";
 
 export default function Home() {
   return (
