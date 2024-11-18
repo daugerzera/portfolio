@@ -6,7 +6,6 @@ import { routing } from '@/i18n/routing';
 import "../globals.css";
 import apple_icon from "@/public/icons/apple-touch-icon.png";
 import fav_icon from "@/public/icons/favicon-32x32.png";
-import NotFoundDummy from "./[...not-found]/page";
 import NotFound from "./not-found";
 
 const workSans = Work_Sans({
@@ -28,12 +27,12 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
 
   const { locale } = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale)) {
     NotFound();
   }
 
