@@ -24,7 +24,10 @@ export const portifolio_data: PortifolioData[] = [
     {
         key: "Blinker",
         title: "Blinker",
-        description: "PWA para facilitar a interação entre pessoas presentes no mesmo evento ou estabelecimento. Utiliza geolocalização, autenticação por SMS e notificações push. MVP em fase de validação.",
+        descriptions: {
+            "en": "PWA to facilitate interaction between people present at the same event or place. It uses geolocation, SMS authentication, and push notifications. MVP in validation phase.",
+            "pt": "PWA para facilitar a interação entre pessoas presentes no mesmo evento ou estabelecimento. Utiliza geolocalização, autenticação por SMS e notificações push. MVP em fase de validação."
+        },
         imageSrc: blinker_thumb.src,
         gallery: [
             blinker_1.src,
@@ -42,7 +45,10 @@ export const portifolio_data: PortifolioData[] = [
     {
         key: "Logistiko",
         title: "Logistiko",
-        description: "SaaS B2B que faz a gestão e controle do estoque de anúncios de diferentes contas de marketplaces, lidando com integrações e filas de processamento. Desenvolvimento Full Stack desde o system design até deploy (em produção).",
+        descriptions: {
+            "en": "B2B SaaS for managing and controlling the inventory of ads from different marketplace accounts, handling integrations and processing queues. Full Stack development from system design to deployment (in production).",
+            "pt": "SaaS B2B que faz a gestão e controle do estoque de anúncios de diferentes contas de marketplaces, lidando com integrações e filas de processamento. Desenvolvimento Full Stack desde o system design até o deploy (em produção)."
+        },
         imageSrc: logistiko_thumb.src,
         gallery: [
             logistiko_1.src,
@@ -59,7 +65,10 @@ export const portifolio_data: PortifolioData[] = [
     {
         key: "Next_Meals",
         title: "Next Level Food",
-        description: "Projeto para treinar todas a funcionalidades basicas do NextJS. Sendo elas client-side, server-side, routes, dynamic routes, error pages, not-found page, loadings, caching, actions e outros hooks.",
+        descriptions: {
+            "en": "Project to practice all the core features of NextJS and their best pratices.",
+            "pt": "Projeto para treinar todos os principais recursos NextJS e sua melhores práticas."
+        },
         imageSrc: meals_thumb.src,
         gallery: [
             meals_1.src,
@@ -75,7 +84,10 @@ export const portifolio_data: PortifolioData[] = [
     {
         key: "Portfolio",
         title: "Portfolio",
-        description: "Esse projeto tem como objetivo, além de ser meu portfólio, treinar tecnologias tais como: NextJS, Tailwind e TypeScript. Garantindo responsividade em qualquer dispositivo.",
+        descriptions: {
+            "en": "This project aims to serve not only as my portfolio but also to practice technologies such as NextJS, TypeScript and Tailwind, ensuring responsiveness on any device.",
+            "pt": "Esse projeto tem como objetivo, além de ser meu portfólio, treinar tecnologias tais como: NextJS, TypeScript e Tailwind, garantindo responsividade em qualquer dispositivo."
+        },
         imageSrc: portfolio_thumb.src,
         gallery: [
             portfolio_1.src,

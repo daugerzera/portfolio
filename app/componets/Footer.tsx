@@ -4,6 +4,7 @@ import mail_icon from "@/public/icons/mail.svg";
 import maps_icon from "@/public/icons/maps.svg";
 import github_icon from "@/public/icons/github_white.svg";
 import linkedin_icon from "@/public/icons/linkedin_white.svg";
+import { useTranslations } from "next-intl";
 
 type ContactLineType = {
   icon: string;
@@ -33,11 +34,12 @@ const ContactLine: React.FC<ContactLineType> = ({ icon, text, alt, link }) => {
 }
 
 export default function Footer() {
+  const t = useTranslations('Footer');
   return (
     <footer id="contact" className="w-full bg-[#121212] py-10 ">
       <div className="container max-w-5xl mx-auto flex flex-col px-[1rem] lg:px-0">
         <h2 className="text-[1.2rem] md:text-[1.5rem] font-oleo-script mb-5">
-          Informações de contato
+          {t('info')}
         </h2>
         <div className="flex justify-between lg:items-center">
           <div className="flex flex-col lg:flex-row gap-4 lg:gap-10">

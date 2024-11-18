@@ -5,10 +5,15 @@ export type SkillIconProps = {
     alt: string;
 };
 
+export type Languages = {
+    en: string;
+    pt: string;
+}
+
 export type PortifolioData = {
     key: string;
     title: string;
-    description: string;
+    descriptions: Languages;
     imageSrc: string;
     gallery: string[];
     techIcons: SkillIconProps[];
